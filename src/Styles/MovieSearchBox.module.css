@@ -1,0 +1,242 @@
+/* Desktop Display */
+.header {
+  position: absolute;
+  width: 100%;
+  height: 140px;
+  left: 0px;
+  top: 0px;
+  background: #292929;
+}
+
+.menuBox {
+  position: absolute;
+  width: 193px;
+  height: 60px;
+  left: 77px;
+  top: 40px;
+  border: 1px solid #fff;
+}
+
+.appTitle {
+  position: absolute;
+  width: 156.7px;
+  height: 32.94px;
+  left: 19px;
+  top: 14px;
+  color:#fff;
+}
+
+.hero {
+  position: absolute;
+  width: 100%;
+  height: 550px;
+  left: 0px;
+  top: 138px;
+  background: url("../images/cinemaBackground.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.heroTitle {
+  position: absolute;
+  width: 490px;
+  height: 282px;
+  left: 77px;
+  top: 109px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 94px;
+  letter-spacing: -0.05em;
+  color: #FFFFFF;
+}
+
+.searchBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  position: absolute;
+  width: 94%;
+  height: 89px;
+  left: 77px;
+  top: 751px;
+}
+
+.searchBox input {
+  position: static;
+  width: 94%;
+  height: 54px;
+  left: 0px;
+  top: 35px;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 4px 0px;
+  font-size: 1em;
+}
+
+.searchLabel {
+  position: static;
+  width: 77px;
+  height: 31px;
+  left: 0px;
+  top: 0px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+  color: #000000;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 4px 0px;
+}
+
+.movieListBox {
+  position: absolute;
+  width: 88%;
+  left: 77px;
+  top: 888px;
+}
+
+.displayBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.PosterBox {
+  width: 300px;
+  height: 300px;
+  margin: 10px 35px;
+  border-radius: 12px;
+}
+
+.movieTitle {
+  width: 300px;
+  height: 300px;
+  color: #fff;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Display for Tablet */
+@media only screen and (min-width: 568px) and (max-width: 768px) {
+  .header {
+    height: 140px;
+  }
+
+  .menuBox {
+    left: 40%;
+    box-sizing: border-box;
+  }
+
+  .appTitle {
+    left: 30%;
+  }
+
+  .heroTitle {
+    left: 18%;
+    top: 109px;
+    text-align: center;
+  }
+
+  .searchBox {
+    width: 89%;
+  }
+
+  .searchBox input {
+    width: 89%;
+  }
+  
+  .movieListBox {
+    left: 52px;
+  }
+
+  .PosterBox {
+    width: 215px;
+    height: 215px;
+    margin: 5px 45px;
+  }
+
+  .movieTitle {
+    width: 215px;
+    height: 215px;
+  }
+}
+
+/* Display for Mobile Device */
+@media only screen and (max-width: 568px) {
+  .header {
+    height: 67px;
+  }
+
+  .menuBox {
+    left: 40%;    
+    width: 108px;
+    height: 33.58px;
+    top: 16px;
+  }
+
+  .appTitle {
+    left: 15%;
+    width: 87.68px;
+    height: 18.43px;
+    top: 7.83px;
+  }
+
+  .hero {
+    height: 257px;
+    top: 67px;
+  }
+
+  .heroTitle {
+    width: 273px;
+    height: 72px;
+    font-size: 28px;
+    line-height: 36px;
+    text-align: center;
+    left: 20%;
+  }
+
+  .searchBox {
+    width: 94%;
+    height: 59px;
+    left: 28px;
+    top: 380px;
+  }
+
+  .searchBox input {
+    width: 94%;
+    font-size: 2em;
+    padding: 0.4em;
+  }
+
+  .searchLabel {
+    width: 51px;
+    height: 21px;
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .movieListBox {
+    width: 80%;
+    left: 15%;
+    top: 550px;
+  }
+}

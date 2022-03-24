@@ -21,7 +21,7 @@ const MovieSearchBox = () => {
         let page = 1;
         while (page <= 3) {
         const res = await fetch(
-          `http://www.omdbapi.com/?s=inception&apikey=38e4604f&page=${page}`
+          `https://www.omdbapi.com/?s=inception&apikey=38e4604f&page=${page}`
         );
         const movies = await res.json();
         movies.Search.forEach((movie) => buildList.push(movie));

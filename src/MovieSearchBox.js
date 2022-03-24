@@ -15,10 +15,8 @@ const MovieSearchBox = () => {
        item[key].toString().toLowerCase().includes(filter.toString().toLowerCase())
       )
   });
-  
-    const buildList = [];
-    
-    useEffect(() => {
+      useEffect(() => {
+      const buildList = [];
       const fetchMovies = async () => {
         let page = 1;
         while (page <= 3) {
@@ -31,7 +29,7 @@ const MovieSearchBox = () => {
         }
         setMovieList(buildList);
       }
-      
+
       fetchMovies();
     }, []);
 

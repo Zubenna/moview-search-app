@@ -2,7 +2,7 @@ import MovieSearchBox from "./MovieSearchBox";
 
 function App() {
   return (
-    <div className="">
+    <div>
       <MovieSearchBox />
     </div>
   );

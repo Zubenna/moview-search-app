@@ -17,21 +17,22 @@ const MovieSearchBox = () => {
   });
   
     const buildList = [];
-    const fetchMovies = async () => {
-    let page = 1;
-    while (page <= 3) {
-    const res = await fetch(
-      `http://www.omdbapi.com/?s=inception&apikey=38e4604f&page=${page}`
-    );
-    const movies = await res.json();
-    movies.Search.forEach((movie) => buildList.push(movie));
-    page++;
-    }
-    setMovieList(buildList);
-  }
-
+    
     useEffect(() => {
-        fetchMovies();
+      const fetchMovies = async () => {
+        let page = 1;
+        while (page <= 3) {
+        const res = await fetch(
+          `http://www.omdbapi.com/?s=inception&apikey=38e4604f&page=${page}`
+        );
+        const movies = await res.json();
+        movies.Search.forEach((movie) => buildList.push(movie));
+        page++;
+        }
+        setMovieList(buildList);
+      }
+      
+      fetchMovies();
     }, []);
 
   return (
